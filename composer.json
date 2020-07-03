@@ -1,0 +1,40 @@
+{
+    "name": "codeigniter4-xpander/bootstrap3",
+    "description": "CodeIgniter 4 Xpander Bootstrap 3",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bagus A Priambada",
+            "email": "iam.adty@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "codeigniter4-xpander/component": "dev-develop",
+        "npm-asset/jquery": "^3",
+        "npm-asset/bootstrap": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "CI4Xpander\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "extra": {
+        "ci4xpander": {
+            "asset": {
+                "copy": {
+                    "vendor/npm-asset/bootstrap/dist": "public/assets/vendor/bootstrap/3",
+                    "vendor/npm-asset/jquery/dist": "public/assets/vendor/jquery/3"
+                }
+            }
+        }
+    }
+}
